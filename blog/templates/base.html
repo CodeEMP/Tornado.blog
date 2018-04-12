@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}<title>Tornado Blog</title>{% endblock %}
+        <meta  charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="margin: 0;">
+        {% block header %}
+        <div class='container-fluid text-light bg-dark'>
+            <div class ="row">
+                <div class ="col-10"><h2>Tornado Blog</h2></div>
+                <div class="col-2">Links n' stuff</div>
+            </div>    
+        </div>
+        {% endblock %}
+        {% block content %}{% endblock %}
+        {% block footer %}<footer></footer>{% endblock %}
+    </body>
+</html>
